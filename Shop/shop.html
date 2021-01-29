@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>| Oceanix Store</title>
+    <meta name="description" content="This is the description" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="store.js" async></script>
+    <link rel="stylesheet" href="/nav.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="shortcut icon" href="/circle.png" type="image/x-icon" />
+  </head>
+  <style>
+    .nav__menu {
+      margin-left: 25%;
+      margin-bottom: 10px;
+    }
+  </style>
+  <body>
+    <header class="header">
+      <a href="#" class="header__logo">Oceanix</a>
+
+      <ion-icon
+        name="menu-outline"
+        class="header__toggle"
+        id="nav-toggle"
+      ></ion-icon>
+
+      <nav class="nav" id="nav-menu">
+        <div class="nav__content bd-grid">
+          <ion-icon
+            name="close-outline"
+            class="nav__close"
+            id="nav-close"
+          ></ion-icon>
+
+          <div class="nav__perfil">
+            <div class="nav__img">
+              <img src="circle.png" alt="" />
+            </div>
+
+            <div>
+              <a href="#" class="nav__name">Oceanix</a> <br />
+              <span class="nav__profesion"
+                >Made By Web Designer : <br />
+                Fathima Zahra</span
+              >
+            </div>
+          </div>
+
+          <div class="nav__menu">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a href="/home.html" class="nav__link">Home</a>
+              </li>
+              <li class="nav__item">
+                <a href="/pollution.html" class="nav__link">Pollution</a>
+              </li>
+              <li class="nav__item">
+                <a href="/solution.html" class="nav__link">Solution </a>
+              </li>
+              <li class="nav__item">
+                <a href="./Shop/shop.html" class="nav__link active-menu"
+                  >Shop</a
+                >
+              </li>
+              <li class="nav__item">
+                <a href="/profile.html" class="nav__link">About</a>
+              </li>
+              <li class="nav__item">
+                <a href="/contact.html" class="nav__link">Contact</a>
+              </li>
+              <li class="nav__item">
+                <a href="/index.html" class="nav__link"
+                  ><i class="fa fa-user"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="nav__social">
+            <a href="#" class="nav__social-icon"></a>
+            <a href="#" class="nav__social-icon"></a>
+            <a href="#" class="nav__social-icon"></a>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <header class="main-header">
+      <h1 class="band-name band-name-large">Shop</h1>
+    </header>
+    <section class="container content-section">
+      <h2 class="section-header">•••|| Day To Day Use ||•••</h2>
+      <div class="shop-items">
+        <div class="shop-item">
+          <span class="shop-item-title">Metal Straws</span>
+          <img class="shop-item-image" src="Images/Metal Straws.jpg" />
+          <div class="shop-item-details">
+            <span class="shop-item-price">$12</span>
+            <button class="btn btn-primary shop-item-button" type="button">
+              ADD TO CART
+            </button>
+          </div>
+        </div>
+        <div class="shop-item">
+          <span class="shop-item-title">Toothpaste Pills</span>
+          <img class="shop-item-image" src="Images/toothpaste pill.jpg" />
+          <div class="shop-item-details">
+            <span class="shop-item-price">$15</span>
+            <button class="btn btn-primary shop-item-button" type="button">
+              ADD TO CART
+            </button>
+          </div>
+        </div>
+        <div class="shop-item">
+          <span class="shop-item-title">Eco-Bags</span>
+          <img class="shop-item-image" src="Images/Bag.jpg" />
+          <div class="shop-item-details">
+            <span class="shop-item-price">$10</span>
+            <button class="btn btn-primary shop-item-button" type="button">
+              ADD TO CART
+            </button>
+          </div>
+        </div>
+        <div class="shop-item">
+          <span class="shop-item-title">Edible Cups (20 pack)</span>
+          <img class="shop-item-image" src="Images/cups.jpg" />
+          <div class="shop-item-details">
+            <span class="shop-item-price">$20</span>
+            <button class="btn btn-primary shop-item-button" type="button">
+              ADD TO CART
+            </button>
+          </div>
+        </div>
+        <div class="shop-item">
+          <span class="shop-item-title">Edible Cutlery (25 pack)</span>
+          <img class="shop-item-image" src="Images/Edible cutlery.jpg" />
+          <div class="shop-item-details">
+            <span class="shop-item-price">$20</span>
+            <button class="btn btn-primary shop-item-button" type="button">
+              ADD TO CART
+            </button>
+          </div>
+        </div>
+        <div class="shop-item">
+          <span class="shop-item-title">Eco-Concrete</span>
+          <img class="shop-item-image" src="Images/eco-concrete.jpg" />
+          <div class="shop-item-details">
+            <span class="shop-item-price">$19.99</span>
+            <button class="btn btn-primary shop-item-button" type="button">
+              ADD TO CART
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="container content-section">
+      <h2 class="section-header">CART</h2>
+      <div class="cart-row">
+        <span class="cart-item cart-header cart-column">ITEM</span>
+        <span class="cart-price cart-header cart-column">PRICE</span>
+        <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+      </div>
+      <div class="cart-items"></div>
+      <div class="cart-total">
+        <strong class="cart-total-title">Total</strong>
+        <span class="cart-total-price">$0</span>
+      </div>
+      <button class="btn btn-primary btn-purchase" type="button">
+        PURCHASE
+      </button>
+    </section>
+  </body>
+  <script src="/nav.js"></script>
+</html>
